@@ -4,13 +4,12 @@ import Index from '../pages/Index';
 import Login from '../pages/Login';
 import ProtectedRoute from './ProtectedRoute';
 import CTMenuManager from '../pages/CTMenuManager';
-import { Menu } from 'lucide-react';
+
 import MenuManager from '../pages/MenuManager';
 import RoleManager from '../pages/Role/RoleManager';
 import PermissonManager from '../pages/Role/PermissonManager';
 import UserManager from '../pages/UserManager';
-import CTServiceCategoryManager from '../pages/CTServiceCategoryManager';
-import ServiceManager from '../pages/ServiceManager';
+
 
 export const router = createBrowserRouter([
   {
@@ -49,15 +48,8 @@ export const router = createBrowserRouter([
         path: 'quan-ly-tai-khoan', // Đường dẫn có tham số :id
         element: < UserManager/>, // Nội dung Menu sẽ hiện ở Outlet
       },
-      {
-        path:'quan-ly-danh-muc-dich-vu',
-        element:<CTServiceCategoryManager />,
-      },
-      {
-         path:'quan-ly-dich-vu',
-        element:<ServiceManager />,
-        
-      },
+
+ 
       
     ],
   },
